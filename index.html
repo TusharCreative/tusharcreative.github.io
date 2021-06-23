@@ -223,21 +223,30 @@
 
     <form class="gform" action="https://script.google.com/macros/s/AKfycbw9COjVww6k12Sk96BACqRR80S0xU97RdhTh3tdqUkwgSPpEdKdmJnJ5beXAN2wpoq4/exec" method="POST"
 	data-email="arifulhoque.tushar@gmail.com">
-	>
+	
 
-        <input type="text" placeholder="name" class="box">
+        <!--input type="text" placeholder="name" class="box">
         <input type="email" placeholder="email" class="box">
         <input type="text" placeholder="project" class="box">
         <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
-        <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
-
+        <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button-->
+       <label for="name">Name:</label>
+	   <input id="name" name="name" placeholder="name"class="box"/>
+	   <br>
+	   <label for="message">Message:</label>
+	   <textarea id="message" name="message" rows="10" placeholder="message"class="box"></textarea>
+	   <label for="email"><em>Your</em>Email Address:</label>
+	   <input id="email" name="email" type="email" value="" 
+	   required placeholder="your.name@email.com"class="box"/>
+	   <button class="button-success pure-button button-xlarge"> <i class="fa fa-paper-plane"></i> &nbsp;Send
+	   </button>
     </form>
 
 </div>
-<div class="thankyou_message" style="display:none;">
+<div style="display:none;"id="thankyou_message" >
       <h3><em>Thanks</em> for contacting us!</h3>
 	  <h3> we will get back to you soon!</h3>
-
+</div>
 </section>
 
 <!-- contact section ends -->
